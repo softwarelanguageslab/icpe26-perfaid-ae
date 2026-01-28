@@ -1,0 +1,15 @@
+[submodule "deps/benchkit"]
+	path = deps/benchkit
+	url = https://github.com/open-s4c/benchkit.git
+[submodule "deps/schedkit"]
+	path = deps/schedkit
+	url = https://github.com/open-s4c/schedkit.git
+[submodule "deps/pythainer"]
+	path = deps/pythainer
+	url = https://github.com/apaolillo/pythainer.git
+[submodule "deps/libvsync"]
+	path = deps/libvsync
+	url = https://github.com/open-s4c/libvsync.git
+[submodule "deps/tilt"]
+	path = deps/tilt
+	url = https://github.com/open-s4c/tilt.git

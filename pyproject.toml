@@ -1,0 +1,46 @@
+[project]
+name = "perfaid-artifact"
+version = "0.0.1"
+description = "ICPE'26 artifact for perfaid: A Declarative Framework for Composable Performance Evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Antonio Paolillo", email = "antonio.paolillo@vub.be"},
+    {name = "Mats Van Molle", email = "mats.van.molle@vub.be"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "pandas<=2.2.3",
+    "matplotlib<=3.9.3",
+    "seaborn<=0.13.2",
+    "plotly<=5.24.1",
+    "cairosvg<=2.7.1",
+    "psutil<=6.1.0",
+    "numpy<=2.2.6",
+    "docopt<=0.6.2",
+    "rich<=14.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/open-s4c/benchkit"
+Paper = "https://doi.org/10.1145/XXXXXXX.XXXXXXX"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lib"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 100
